@@ -5,7 +5,7 @@ pipeline {
         stage("Source Code"){
             steps{
                 echo "Cloning the Code"
-                git url: "https://github.com/ShubhamMahile/Calculator-JavaProject.git", branch: "main"
+                git url: "https://github.com/ShubhamMahile/Calculator-Java.git", branch: "main"
             }
         }
         stage("Build & Test"){
