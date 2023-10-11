@@ -11,7 +11,7 @@ pipeline {
         stage('Build'){
             steps{
                 echo "Building an Image"
-                bat "docker build . -t calculator-java"
+                bat "docker build -t calculator-java ."
             }
         }
         stage('Test'){
