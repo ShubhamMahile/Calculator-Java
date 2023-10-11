@@ -5,6 +5,7 @@ pipeline {
         stage('Checkout'){
             steps{
                 echo "Cloning the Code"
+                checkout scm
                //git url: "https://github.com/ShubhamMahile/Calculator-Java.git", branch: "main"
             }
         }
