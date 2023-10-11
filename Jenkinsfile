@@ -2,19 +2,19 @@ pipeline {
     agent any
     
     stages{
-        stage("Source Code"){
+        stage("Checkout"){
             steps{
                 echo "Cloning the Code"
                //git url: "https://github.com/ShubhamMahile/Calculator-Java.git", branch: "main"
             }
         }
-        stage("Build & Test"){
+        stage("Build"){
             steps{
                 echo "Building an Image"
                 //bat "docker build . -t calculator-java"
             }
         }
-        stage("Push to DockerHub"){
+        stage("Test"){
             steps{
                 echo "Pushing an Image to Docker Hub"
                 //withCredentials([usernamePassword(credentialsId:"dockerHub",passwordVariable:"dockerHubPass",usernameVariable:"dockerHubUser")]){
