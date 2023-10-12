@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the compiled Java application JAR file into the container
-COPY target/Calculator-java.jar /app/Calculator-java.jar
+COPY /Calculator-java.jar /app/Calculator-java.jar
 
 # Define the command to run your Java application
 CMD ["java", "-jar", "Calculator-java.jar"]
