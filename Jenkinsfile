@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages{
-        stage('Checkout'){
+        stage('Clone'){
             steps{
                 echo "Cloning the Code"
                git url: "https://github.com/ShubhamMahile/Calculator-Java.git", branch: "main"
