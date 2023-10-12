@@ -26,8 +26,8 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                //bat "docker-compose down && docker-compose up -d"
-                bat "docker run -d shubhammahile/calculator-java-master:latest"
+                bat "docker-compose down && docker-compose up -d"
+                //bat "docker run -d shubhammahile/calculator-java-master:latest"
             }
         }
     }
